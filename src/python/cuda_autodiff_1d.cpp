@@ -122,7 +122,7 @@ void bind_cuda_autodiff_1d(py::module& m, py::module& s) {
         .def(py::init<const Vector1iD &>());
 
     m.def(
-        "binary_search",
+        "binary_searchx",
         [](uint32_t start,
            uint32_t end,
            const std::function<MaskD(UInt32D)> &pred) {
